@@ -2,85 +2,168 @@
 <html lang="en">
 <head>
   <title>Home</title>
-  <meta name="google-site-verification" content="your-verification-code" />
-  <meta name="description", content="This website encourages the teachings of Jesus Christ, The teachings of Prophets, the Commandments and the Gospel."
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Chad Elroy">
-  <meta name="theme-color" content="#FFA07A">
-  <meta property="og:title" content="Teachings of Jesus Christ">
-  <link rel="icon" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cslewisinstitute.org%2Fresources%2Fhow-to-read-the-bible-part-3-the-bibles-center-is-jesus-christ%2F&psig=AOvVaw1AMyiYHm-lXbiBbTbJ74FG&ust=1747286969093000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPjI1Kqdoo0DFQAAAAAdAAAAABAE">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This website encourages the teachings of Jesus Christ, The teachings of Prophets, the Commandments and the Gospel." />
+  <meta name="author" content="Chad Elroy" />
+  <meta name="theme-color" content="#FFA07A" />
   <style>
-    h1 {
-      margin-top: 100px;   
-      margin-bottom: 100px; 
-      font-size: 48px;      
-      text-align: center; 
-      padding: 40px
-    }
-    h6 {
-      margin-top: 100px;   
-      margin-bottom: 100px; 
-      font-size: 24px;
-      text-align: center;   
-    }
-    body {
+   body {
       background-color: #1c1b16;
       color: white;
+      margin: 0;
+      font-family: 'Lucida Console', serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 25px;
+      min-height: 100vh;
+    }
+    h1 {
+      margin-top: 100px;   
+      margin-bottom: 40px; 
+      font-size: 64px;      
+      text-align: center; 
+      padding: 0;
+      color: blue;
+    }
+    h6 {
+      margin-top: 0;   
+      margin-bottom: 40px; 
+      font-size: 24px;
+      text-align: center;   
+      max-width: 600px;
+      line-height: 1.4;
+    }
+    p {
+      max-width: 600px;
+      line-height: 1.5;
+      text-align: center;
+      margin: 10px 0;
+    }
+    .button-container {
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      justify-content: center;
+      width: 100%;
+      max-width: 1100px;
+      align-items: center;
+    }
+    .photo-button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: white;
+      border: none;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+      width: 100%;
+      text-decoration: none;
+      color: #4a4a4a;
+      font-weight: bold;
+      font-size: 22px;
+      font-family: 'Georgia', serif;
+      text-align: center;
+    }
+    .photo-button img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+      border-bottom: 1px solid #eee;
+    }
+    .photo-button span {
+      display: block;
+      width: 100%;
+      padding: 12px 0;
+      background: #fff;
+      border-top: 1px solid #eee;
+    }
+    .photo-button:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+      color: #5C6AC4;
+    }
+    .photo-button:hover img {
+      transform: scale(1.05);
+    }
+    footer {
+      margin-top: auto;
+      padding: 20px;
+      font-size: 14px;
+      color: #aaa;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <div class="background"></div>
-  <h1>Gospel Almanac
-    <h6> Welcome to the Gospel Almanac, here you will Learn some teachings of<br>
-      Jesus Christ.<br><br><br>
-    <p>This website was created by Chad Elroy<br>
-        it was made so that he can share some of his knowledge about Christ<br>
-        and so that you can also share your knowledge about him!<br><br>
-        <p>I am sorry to inform you that this is still the Alpha Version<br>
-        for this website and more will be added!</p>
-        <br>
-        <p>So Enjoy the early contents I have created<br>
-        and I hope you will learn a lot about Christ</p>
-        <br><br><br><a href="debut.html">
-  <button style="font-size: 28px; padding: 12px 20px; font-family: 'Georgia', sans-serif; background-color: #719784; color: white;">
-    Debut
-  </button>
-</a>
+  <h1>Gospel Almanac</h1><br><br>
+  <h6 style="font-size: 28px;">Welcome to the Gospel Almanac, here you will learn some teachings of
+    Jesus Christ.<br><br>
+  </h6>
+  <p style="font-size: 32px;">This website was created by Chad Elroy<br><br>
+     It was made so that he can share some of his knowledge about Christ
+     and so that you can also share your knowledge about him!
+  </p><br><br>
+  <div class="button-container">
 <br>
 <br>
-<a href="sufferings.html">
-  <button style="font-size: 28px; padding: 12px 20px; font-family: 'Georgia', sans-serif; background-color: #719784; color: white;">
-    Sufferings
-  </button>
-</a>
+    <a href="debut.html" class="photo-button" aria-label="Debut">
+      <img src="https://assets.churchofjesuschrist.org/d2/18/d2181d8fc63b27c70fa1c0385f5605c2f73b3965/jesus_birth_nativity.jpeg"/>
+      <span>Debut</span><a/>
 <br>
 <br>
-<a href="resurrection.html">
-  <button style="font-size: 28px; padding: 12px 20px; font-family: 'Georgia', sans-serif; background-color: #719784; color: white;">
-    Resurrection
-  </button>
-</a>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<footer>
-  <p>© 2025 Chad Elroy.<br> All Rights Reserved.</p>
-</footer>
+    <a href="sufferings.html" class="photo-button" aria-label="Sufferings teachings">
+      <img src="https://images.ohmyhosting.se/7k4Z-aJG32j2DAAhG7Yo0oIgiUM=/fit-in/1680x1050/smart/filters:quality(85)/https%3A%2F%2Fengelsbergideas.com%2Fwp-content%2Fuploads%2F2022%2F11%2Fchrist-on-cross-pvqao29d1cli90emklr208aj0suwxuil23mygkjhco.jpg"/>
+      <span>Sufferings</span>
+    </a>
     
-    
-    
-    
-    
-    
+<br>
+<br>
+    <a href="resurrection.html" class="photo-button" aria-label="Resurrection teachings">
+      <img src="https://i0.wp.com/www.cruciformcoc.com/wp-content/uploads/2020/04/jesus-resurrected.jpg?fit=1200%2C1198&ssl=1"/>
+      <span>Resurrection</span>
+    </a>
+  </div>
+    <div class="button-container">
+<br>
+<br>
+    <a href="debut.html" class="photo-button" aria-label="Baptism">
+      <img src="https://www.churchofjesuschrist.org/imgs/568a6804bbb4767549793eab4d73ab2f4ed251e5/full/1280%2C/0/default"/>
+      <span>Baptism</span><a/>
+<br>
+<br>
+    <a href="sufferings.html" class="photo-button" aria-label="The Last Supper">
+      <img src="https://ichef.bbci.co.uk/images/ic/480xn/p06m6zfk.jpg"/>
+      <span>The Last Supper</span>
+    </a>
+<br>
+<br>
+    <a href="resurrection.html" class="photo-button" aria-label="Ascension">
+      <img src="https://godinallthings.com/wp-content/uploads/2012/05/ascension-of-jesus.jpg"/>
+      <span>Ascension</span>
+    </a>
+  </div>
+<br>
+<br>
+<p style="font-size: 32px;">I am sorry to inform you that this is still the Alpha Version
+     for this website and more will be added!</p><br><br>
+  <p style="font-size: 32px;, font-family: Georgia;">So enjoy the early contents I have created
+     and I hope you will learn a lot about Christ!</p><br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+  <footer>
+    <p>© 2025 Chad Elroy.<br>All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
